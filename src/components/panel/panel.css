@@ -1,14 +1,13 @@
-.popular {
+.panel {
   max-width: 500px;
   width: 100%;
   height: 295px;
   background: #1d1d1d;
   border-radius: 40px;
   padding: 25px;
-  margin-right: 40px;
   position: relative;
 }
-.popular::after {
+.panel::after {
   content: '';
   position: absolute;
   left: 30px;
@@ -41,21 +40,21 @@
     opacity: 0.2;
   }
 }
-.popular:last-child::after {
+.panel:last-child::after {
   left: 0;
   right: 0;
   margin: 0 auto;
   top: 70%;
 }
-.popular:last-child {
+.panel:last-child {
   margin-right: 0;
 }
-.popular__hed {
+.panel__hed {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.popular__hed p {
+.panel__hed p {
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -64,10 +63,10 @@
   position: relative;
   cursor: pointer;
 }
-.popular__hed p:hover::after {
+.panel__hed p:hover::after {
   width: 100%;
 }
-.popular__hed p::after {
+.panel__hed p::after {
   content: '';
   position: absolute;
   top: 100%;
@@ -79,10 +78,10 @@
   background: #b9b9b9;
   transition: 0.3s;
 }
-.profile__main-popular {
+.profile__main-panel {
   display: none;
 }
-.popular__content {
+.panel__content {
   padding-right: 20px;
   overflow: auto;
   height: 220px;
@@ -90,23 +89,23 @@
 }
 
 /* width */
-.popular__content::-webkit-scrollbar {
+.panel__content::-webkit-scrollbar {
   width: 3px;
 }
 
 /* Track */
-.popular__content::-webkit-scrollbar-track {
+.panel__content::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(61, 61, 61);
   border-radius: 10px;
 }
 
 /* Handle */
-.popular__content::-webkit-scrollbar-thumb {
+.panel__content::-webkit-scrollbar-thumb {
   background: rgba(233, 80, 80, 0.75);
   border-radius: 10px;
 }
 
 /* Handle on hover */
-.popular__content::-webkit-scrollbar-thumb:hover {
+.panel__content::-webkit-scrollbar-thumb:hover {
   background: rgba(233, 80, 80, 0.75);
 }

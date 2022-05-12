@@ -14,12 +14,12 @@ interface panel {
 
 export const Panel: FC<panel> = ({ title, children, click, linkName }) => {
   return (
-    <div className="popular">
-      <div className="popular__hed">
-        <Title classNameTitle="popular__title">{title}</Title>
+    <div className="panel">
+      <div className="panel__hed">
+        <Title classNameTitle="panel__title">{title}</Title>
         <p onClick={click}>{linkName}</p>
       </div>
-      <div className="popular__content">{children}</div>
+      <div className="panel__content">{children}</div>
     </div>
   );
 };
