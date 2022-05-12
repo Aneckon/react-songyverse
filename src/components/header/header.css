@@ -1,0 +1,48 @@
+.header{
+  width: 100%;
+  padding: 15px 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header__auth{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__search{
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+}
+.header__search::after{
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url('../image/header/search.svg') no-repeat center;
+}
+.header__auth p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.header__auth img{
+  margin-right: 10px;
+}
+.header__auth svg{
+  margin-left: 10px;
+  fill: #fff;
+}
+.header__auth-name {
+  cursor: pointer;
+  position: relative;
+}
+.header__svg-active{
+  transform: rotate(180deg);
+}

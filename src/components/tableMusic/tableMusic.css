@@ -1,0 +1,101 @@
+.table {
+  max-width: 100%;
+  width: 100%;
+}
+.table__head {
+  text-align: left;
+  border-bottom: 1px solid #939393;
+}
+.table__head th {
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+.table__head p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #939393;
+}
+.table__head th:first-child{
+  width: 35%;
+}
+.table__head th:last-child {
+  text-align: right;
+}
+.table__body td {
+  padding: 10px;
+}
+.table__body tr {
+  transition: 0.3s;
+}
+.table__body tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.table__name {
+  display: flex;
+  align-items: center;
+}
+.table__name-item {
+  margin-left: 15px;
+}
+.table__name-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.table__name-item span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #939393;
+  cursor: pointer;
+  position: relative;
+}
+.table__name-item span::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 100%;
+  width: 0%; 
+  height: 1px;
+  background: #939393;
+  transition: .3s;
+}
+.table__name-item span:hover::after{
+  width: 100%;
+}
+.table__text {
+  vertical-align: top;
+  padding-top: 27px !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.table__time {
+  text-align: right !important;
+}
+.table__time svg {
+  cursor: pointer;
+  max-width: 20px;
+  width: 100%;
+  margin-right: 30px;
+}
+.table__time div {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.table__data {
+  text-align: center !important;
+}
+.table__album {
+  text-align: center !important;
+}

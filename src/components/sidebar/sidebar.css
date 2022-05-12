@@ -1,0 +1,59 @@
+.sidebar {
+  max-width: 74px;
+  width: 100%;
+  height: 100%;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar__menu {
+  height: 540px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar__menu-list {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar__menu-list .active {
+  position: relative;
+  filter: drop-shadow(0px 0px 10px rgba(233, 80, 80, 0.75));
+}
+.sidebar__menu-link svg:hover {
+  filter: drop-shadow(0px 0px 10px rgba(233, 80, 80, 0.75));
+}
+.sidebar__menu-list .active svg:hover {
+  filter: drop-shadow(0px 0px 0);
+}
+.sidebar__menu-list .active svg path {
+  fill: #fff;
+}
+.sidebar__menu-list .active::after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 15px;
+  height: 15px;
+  background: url('../image/hover.svg') no-repeat center;
+}
+.sidebar__footer{
+  text-align: center;
+}
+.sidebar__footer li:first-child{
+  padding-bottom: 10px;
+}
+.sidebar__footer path{
+  fill: #B9B9B9;
+}
+.sidebar__footer span{
+  font-size: 16px;
+  color: #B9B9B9;
+}

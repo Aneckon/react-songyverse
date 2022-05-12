@@ -1,0 +1,25 @@
+.music {
+  max-width: 1050px;
+  width: 100%;
+}
+.music__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.music__head-name {
+  margin-left: 30px;
+}
+.music__head-name .title {
+  padding-bottom: 20px;
+}
+.music__head-name p {
+  color: #c4c4c4;
+}
+.music__main {
+  max-width: 100%;
+  width: 100%;
+}
+.music__main-slider {
+  margin-top: 60px;
+}
